@@ -2,8 +2,10 @@
 
 namespace FibonacciSeries {
   class Program {
+	  const int MAGIC_NUMBER = 10;
+	  
     static void Main(string[] args) {
-      int[] fibonacci = CreateFibonacciSeries(5);
+      int[] fibonacci = CreateFibonacciSeries(MAGIC_NUMBER);
 
       for (int i = 0; i < fibonacci.Length; i++) {
         Console.Out.Write(fibonacci[i]);
