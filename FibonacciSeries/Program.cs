@@ -21,6 +21,11 @@ namespace FibonacciSeries {
     }
 
     static int[] CreateFibonacciSeries(int count) {
+	  if (count < 0) {
+		Console.Out.Write("Fibonacci count has to be > 0");
+		return new int[1];
+	  }
+	  
       int[] fibonacciSeries = new int[count];
       for (int i = 0; i < count; i++)
         fibonacciSeries[i] = CreateFibonacciNumber(i);
